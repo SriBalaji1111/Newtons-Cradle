@@ -11,24 +11,24 @@ var world;
 
 
 function setup() {
-	createCanvas(1600, 700);
+	createCanvas(800, 500);
 	rectMode(CENTER);
 
 
 	engine = Engine.create();
 	world = engine.world;
 
-	roofObject=new roof(width/2,height/4,width/7,20);
+	roofObject=new roof(400,20,600,20);
 
 	bobDiameter=40;
 
 	startBobPositionX=width/2;
 	startBobPositionY=height/4+500;
-	bobObject1=new bob(startBobPositionX-bobDiameter*2,startBobPositionY,bobDiameter);
-	bobObject2=new bob(startBobPositionX-bobDiameter,startBobPositionY,bobDiameter);
-	bobObject3=new bob(startBobPositionX,startBobPositionY,bobDiameter);
-	bobObject4=new bob(startBobPositionX+bobDiameter,startBobPositionY,bobDiameter);
-	bobObject5=new bob(startBobPositionX+bobDiameter*2,startBobPositionY,bobDiameter);
+	bobObject1=new bob(startBobPositionX-bobDiameter*2,300,bobDiameter);
+	bobObject2=new bob(startBobPositionX-bobDiameter,300,bobDiameter);
+	bobObject3=new bob(startBobPositionX,300,bobDiameter);
+	bobObject4=new bob(startBobPositionX+bobDiameter,300,bobDiameter);
+	bobObject5=new bob(startBobPositionX+bobDiameter*2,300,bobDiameter);
 	
 	
 	//Create a Ground
